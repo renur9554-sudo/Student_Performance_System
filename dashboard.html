@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Performance System</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.9));
+            backdrop-filter: blur(10px);
+            padding: 25px 35px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logout-btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #ff4757, #ff6348);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+        }
+
+        .logout-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 71, 87, 0.5);
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.9));
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 212, 255, 0.3);
+            border-color: #00d4ff;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card h3 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .card p {
+            color: #b8b8d1;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>👨‍🏫 Welcome, {{ session.get('username', 'Teacher') }}</h1>
+        <a href="/logout" class="logout-btn">Logout</a>
+    </div>
+
+    <div class="dashboard-grid">
+        <div class="card">
+            <a href="/add_student">
+                <h3>➕ Add Student</h3>
+                <p>Register new students with their details</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/display_students">
+                <h3>👥 Display All Students</h3>
+                <p>View complete list of registered students</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/add_activity">
+                <h3>🎯 Add Extracurricular Activity</h3>
+                <p>Track student activities beyond academics</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/display_activities">
+                <h3>🎨 Display Extracurricular Activities</h3>
+                <p>View all activities by students</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/display_sports">
+                <h3>⚽ Display Sports Activities</h3>
+                <p>See sports participation records</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/lowest_marks_individual">
+                <h3>📉 Find Lowest Marks (Individual)</h3>
+                <p>Analyze weak subjects for specific students</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/lowest_marks_all">
+                <h3>📊 Find Lowest Marks (All Students)</h3>
+                <p>Class-wide performance analysis</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/compare_student">
+                <h3>🔍 Compare Student Semesters</h3>
+                <p>Detailed performance comparison</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/mark_attendance">
+                <h3>✅ Mark Attendance</h3>
+                <p>Record daily attendance for students</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/bulk_attendance">
+                <h3>📋 Mark Bulk Attendance</h3>
+                <p>Mark attendance for multiple students</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/view_student_attendance">
+                <h3>👤 View Student Attendance</h3>
+                <p>Individual attendance records</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/view_all_attendance">
+                <h3>📑 View All Attendance</h3>
+                <p>Class-wide attendance overview</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/low_attendance_alerts">
+                <h3>⚠️ Low Attendance Alerts</h3>
+                <p>Identify students below threshold</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/monthly_report">
+                <h3>📅 Monthly Attendance Report</h3>
+                <p>Generate month-wise reports</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="/undo_attendance">
+                <h3>↩️ Undo Last Attendance</h3>
+                <p>Revert incorrect attendance entries</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

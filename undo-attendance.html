@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undo Last Attendance</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+            padding: 20px;
+        }
+        .container { max-width: 700px; margin: 0 auto; }
+        .header {
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.9));
+            backdrop-filter: blur(10px);
+            padding: 25px 35px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .back-btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+        }
+        .form-container {
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.9));
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .alert {
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            font-weight: 500;
+            border-left: 4px solid;
+        }
+        .error {
+            background: rgba(255, 71, 87, 0.15);
+            color: #ff4757;
+            border-color: #ff4757;
+        }
+        .success {
+            background: rgba(0, 255, 136, 0.15);
+            color: #00ff88;
+            border-color: #00ff88;
+        }
+        .form-group { margin-bottom: 24px; }
+        label {
+            display: block;
+            color: #b8b8d1;
+            margin-bottom: 10px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            background: rgba(15, 15, 35, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            transition: all 0.3s;
+        }
+        input:focus {
+            outline: none;
+            border-color: #00d4ff;
+            background: rgba(15, 15, 35, 0.8);
+            box-shadow: 0 0 0 4px rgba(0, 212, 255, 0.1);
+        }
+        button {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #ffa502, #ff6348);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(255, 165, 2, 0.3);
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255, 165, 2, 0.5);
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>↩️ Undo Last Attendance</h1>
+            <a href="/dashboard" class="back-btn">← Back</a>
+        </div>
+        
+        <div class="form-container">
+            {% if error %}<div class="alert error">{{ error }}</div>{% endif %}
+            {% if success %}<div class="alert success">{{ success }}</div>{% endif %}
+            
+            <form method="POST">
+                <div class="form-group">
+                    <label for="rollNo">Student Roll Number *</label>
+                    <input type="number" id="rollNo" name="rollNo" required>
+                </div>
+                <button type="submit">Undo Last Entry</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
