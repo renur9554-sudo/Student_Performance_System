@@ -1,0 +1,500 @@
+[
+  {
+    "rollNo": 2418491,
+    "name": "Aarav Sharma",
+    "semester": 7,
+    "marks": [
+      71,
+      81,
+      67,
+      90,
+      98
+    ],
+    "sports": null,
+    "activities": [
+      "Photography"
+    ]
+  },
+  {
+    "rollNo": 2418492,
+    "name": "Vivaan Patel",
+    "semester": 4,
+    "marks": [
+      47,
+      93,
+      47,
+      89,
+      75
+    ],
+    "sports": "Swimming",
+    "activities": [
+      "Drama Club",
+      "Coding Club"
+    ]
+  },
+  {
+    "rollNo": 2418493,
+    "name": "Aditya Kumar",
+    "semester": 4,
+    "marks": [
+      63,
+      86,
+      95,
+      49,
+      71
+    ],
+    "sports": "Swimming",
+    "activities": [
+      "Photography"
+    ]
+  },
+  {
+    "rollNo": 2418494,
+    "name": "Vihaan Singh",
+    "semester": 2,
+    "marks": [
+      69,
+      81,
+      75,
+      51,
+      62
+    ],
+    "sports": "Basketball",
+    "activities": [
+      "Coding Club",
+      "Debate Society",
+      "Art Club"
+    ]
+  },
+  {
+    "rollNo": 2418495,
+    "name": "Arjun Gupta",
+    "semester": 7,
+    "marks": [
+      97,
+      52,
+      51,
+      50,
+      98
+    ],
+    "sports": "Basketball",
+    "activities": [
+      "Science Club",
+      "Coding Club",
+      "Art Club"
+    ]
+  },
+  {
+    "rollNo": 2418496,
+    "name": "Sai Reddy",
+    "semester": 3,
+    "marks": [
+      97,
+      61,
+      69,
+      91,
+      59
+    ],
+    "sports": "Table Tennis",
+    "activities": [
+      "Robotics Club"
+    ]
+  },
+  {
+    "rollNo": 2418497,
+    "name": "Arnav Mehta",
+    "semester": 6,
+    "marks": [
+      93,
+      58,
+      73,
+      48,
+      74
+    ],
+    "sports": "Basketball",
+    "activities": [
+      "Photography",
+      "Literature Society",
+      "Robotics Club"
+    ]
+  },
+  {
+    "rollNo": 2418498,
+    "name": "Ayaan Khan",
+    "semester": 2,
+    "marks": [
+      88,
+      91,
+      60,
+      47,
+      69
+    ],
+    "sports": "Football",
+    "activities": [
+      "Art Club",
+      "Robotics Club"
+    ]
+  },
+  {
+    "rollNo": 2418499,
+    "name": "Krishna Verma",
+    "semester": 7,
+    "marks": [
+      61,
+      58,
+      45,
+      49,
+      47
+    ],
+    "sports": "Basketball",
+    "activities": [
+      "Art Club",
+      "Robotics Club"
+    ]
+  },
+  {
+    "rollNo": 2418500,
+    "name": "Ishaan Joshi",
+    "semester": 4,
+    "marks": [
+      57,
+      53,
+      64,
+      75,
+      68
+    ],
+    "sports": null,
+    "activities": [
+      "Debate Society",
+      "Literature Society",
+      "Robotics Club"
+    ]
+  },
+  {
+    "rollNo": 2418501,
+    "name": "Shaurya Nair",
+    "semester": 8,
+    "marks": [
+      45,
+      82,
+      55,
+      57,
+      47
+    ],
+    "sports": "Football",
+    "activities": [
+      "Debate Society",
+      "Literature Society"
+    ]
+  },
+  {
+    "rollNo": 2418502,
+    "name": "Atharv Desai",
+    "semester": 1,
+    "marks": [
+      51,
+      56,
+      69,
+      53,
+      53
+    ],
+    "sports": "Tennis",
+    "activities": [
+      "Robotics Club",
+      "Music Band",
+      "Drama Club"
+    ]
+  },
+  {
+    "rollNo": 2418503,
+    "name": "Advik Iyer",
+    "semester": 5,
+    "marks": [
+      71,
+      75,
+      45,
+      95,
+      94
+    ],
+    "sports": "Volleyball",
+    "activities": [
+      "Coding Club",
+      "Robotics Club"
+    ]
+  },
+  {
+    "rollNo": 2418504,
+    "name": "Pranav Rao",
+    "semester": 6,
+    "marks": [
+      72,
+      53,
+      80,
+      92,
+      95
+    ],
+    "sports": "Volleyball",
+    "activities": [
+      "Robotics Club",
+      "Art Club",
+      "Science Club"
+    ]
+  },
+  {
+    "rollNo": 2418505,
+    "name": "Reyansh Pandey",
+    "semester": 3,
+    "marks": [
+      62,
+      87,
+      89,
+      76,
+      46
+    ],
+    "sports": "Chess",
+    "activities": [
+      "Art Club",
+      "Robotics Club"
+    ]
+  },
+  {
+    "rollNo": 2418506,
+    "name": "Aadhya Sharma",
+    "semester": 4,
+    "marks": [
+      49,
+      54,
+      94,
+      82,
+      55
+    ],
+    "sports": "Chess",
+    "activities": [
+      "Dance Team",
+      "Coding Club"
+    ]
+  },
+  {
+    "rollNo": 2418507,
+    "name": "Ananya Patel",
+    "semester": 8,
+    "marks": [
+      71,
+      76,
+      46,
+      80,
+      97
+    ],
+    "sports": "Volleyball",
+    "activities": [
+      "Coding Club",
+      "Science Club"
+    ]
+  },
+  {
+    "rollNo": 2418508,
+    "name": "Diya Kumar",
+    "semester": 7,
+    "marks": [
+      54,
+      49,
+      84,
+      49,
+      78
+    ],
+    "sports": "Football",
+    "activities": [
+      "Dance Team",
+      "Debate Society",
+      "Music Band"
+    ]
+  },
+  {
+    "rollNo": 2418509,
+    "name": "Saanvi Singh",
+    "semester": 1,
+    "marks": [
+      97,
+      66,
+      71,
+      95,
+      45
+    ],
+    "sports": "Table Tennis",
+    "activities": [
+      "Literature Society",
+      "Science Club"
+    ]
+  },
+  {
+    "rollNo": 2418510,
+    "name": "Isha Gupta",
+    "semester": 3,
+    "marks": [
+      91,
+      69,
+      97,
+      75,
+      47
+    ],
+    "sports": null,
+    "activities": [
+      "Literature Society"
+    ]
+  },
+  {
+    "rollNo": 2418511,
+    "name": "Navya Reddy",
+    "semester": 5,
+    "marks": [
+      64,
+      69,
+      86,
+      79,
+      98
+    ],
+    "sports": null,
+    "activities": []
+  },
+  {
+    "rollNo": 2418512,
+    "name": "Kiara Mehta",
+    "semester": 7,
+    "marks": [
+      89,
+      76,
+      77,
+      63,
+      95
+    ],
+    "sports": null,
+    "activities": []
+  },
+  {
+    "rollNo": 2418513,
+    "name": "Aanya Khan",
+    "semester": 3,
+    "marks": [
+      66,
+      75,
+      98,
+      68,
+      82
+    ],
+    "sports": "Athletics",
+    "activities": [
+      "Art Club",
+      "Science Club",
+      "Photography"
+    ]
+  },
+  {
+    "rollNo": 2418514,
+    "name": "Myra Verma",
+    "semester": 4,
+    "marks": [
+      85,
+      65,
+      95,
+      53,
+      57
+    ],
+    "sports": "Volleyball",
+    "activities": [
+      "Coding Club"
+    ]
+  },
+  {
+    "rollNo": 2418515,
+    "name": "Sara Joshi",
+    "semester": 1,
+    "marks": [
+      50,
+      87,
+      84,
+      63,
+      45
+    ],
+    "sports": null,
+    "activities": []
+  },
+  {
+    "rollNo": 2418516,
+    "name": "Pari Nair",
+    "semester": 7,
+    "marks": [
+      78,
+      70,
+      49,
+      90,
+      48
+    ],
+    "sports": "Swimming",
+    "activities": [
+      "Art Club"
+    ]
+  },
+  {
+    "rollNo": 2418517,
+    "name": "Riya Desai",
+    "semester": 5,
+    "marks": [
+      82,
+      69,
+      50,
+      96,
+      73
+    ],
+    "sports": "Tennis",
+    "activities": []
+  },
+  {
+    "rollNo": 2418518,
+    "name": "Avni Iyer",
+    "semester": 8,
+    "marks": [
+      48,
+      58,
+      88,
+      91,
+      97
+    ],
+    "sports": null,
+    "activities": [
+      "Science Club",
+      "Drama Club",
+      "Art Club"
+    ]
+  },
+  {
+    "rollNo": 2418519,
+    "name": "Anaya Rao",
+    "semester": 6,
+    "marks": [
+      52,
+      92,
+      62,
+      91,
+      78
+    ],
+    "sports": "Football",
+    "activities": []
+  },
+  {
+    "rollNo": 2418520,
+    "name": "Shanaya Pandey",
+    "semester": 1,
+    "marks": [
+      67,
+      66,
+      96,
+      95,
+      60
+    ],
+    "sports": "Cricket",
+    "activities": [
+      "Literature Society",
+      "Robotics Club"
+    ]
+  }
+]
